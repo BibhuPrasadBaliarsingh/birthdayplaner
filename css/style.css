@@ -29,6 +29,56 @@ body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.80857;
 }
+/* Make all deal images same size */
+#b-deals .effect-service img {
+    width: 100%;
+    height: 280px;   /* adjust height as you like */
+    object-fit: cover; 
+    border-radius: 10px; 
+}
+
+/* Donate Section */
+.donate-section {
+    background: #fdf2f8;
+    padding: 70px 0;
+}
+
+.donate-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #d63384;
+}
+
+.donate-subtitle {
+    color: #555;
+    font-size: 16px;
+    margin-top: -5px;
+}
+
+/* Gallery Grid */
+.donate-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+/* Images */
+.donate-gallery img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+/* Hover Effect */
+.donate-gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.18);
+}
 
 
 a {
